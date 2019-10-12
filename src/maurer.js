@@ -18,17 +18,22 @@ class Maurer
   */
   constructor(x, y, N, D)
   {
+    // set rose parameters
     this.center = createVector(x, y);
     this.N = N;
     this.D = D;
-    this.R = 50;
+    this.R = 25;
 
+    // set rose colors
     this.countorColor = this.makeColor();
     this.roseColor = this.makeColor();
   }
 
   /*
    * I generate a random color.
+   *
+   * Returns:
+   *  _ (Array): generated color
    */
   makeColor()
   {
